@@ -4,6 +4,11 @@ title:  "Welcome to Jekyll!"
 date:   2023-11-17 04:08:40 +0900
 categories: jekyll update
 ---
+
+$$
+E = mc^2
+$$
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.日本語も書いてみた。
 
 Jekyll requires blog post files to be named according to the following format:
