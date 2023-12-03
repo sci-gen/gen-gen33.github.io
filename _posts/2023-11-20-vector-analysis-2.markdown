@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "ベクトル解析 戸田 第2章 演習問題"
+title:  "ベクトル解析 戸田 第2章 演習問題解答"
 date:   2023-11-20 04:08:40 +0900
 categories: vector analysis Toda
 ---
 
-## 第2章 演習問題
+## 第2章 演習問題解答
 #### [1]
 $$
     \frac{1}{2} \frac{dx^2}{dt} = x\frac{dx}{dt}
