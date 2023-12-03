@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-04T04:47:26+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">ベクトル解析 戸田 第2章 演習問題解答</title><link href="http://localhost:4000/vector/analysis/toda/2023/11/20/vector-analysis-2.html" rel="alternate" type="text/html" title="ベクトル解析 戸田 第2章 演習問題解答" /><published>2023-11-20T04:08:40+09:00</published><updated>2023-11-20T04:08:40+09:00</updated><id>http://localhost:4000/vector/analysis/toda/2023/11/20/vector-analysis-2</id><content type="html" xml:base="http://localhost:4000/vector/analysis/toda/2023/11/20/vector-analysis-2.html"><![CDATA[<h2 id="第2章-演習問題解答">第2章 演習問題解答</h2>
+<h4 id="1">[1]</h4>
+<p>\(\frac{1}{2} \frac{dx^2}{dt} = x\frac{dx}{dt}\)
+を利用する。</p>
+
+<p>\(A(t) = (x(t), y(t))\)
+のようにAの成分を考えると、Aの微分は</p>
+
+\[\frac{dA}{dt} = (\frac{dx}{dt}, \frac{dy}{dt})。\]
+
+<p>問題の式を成分で変形していくと、</p>
+
+\[\begin{aligned}
+    A\cdot\frac{dA}{dt}
+        &amp;= x\frac{dx}{dt} + y\frac{dy}{dt}\\
+        &amp;= \frac{1}{2} \frac{d}{dt} \left( x^2 + y^2 \right)\\
+        &amp;= \frac{1}{2} \frac{d}{dt} || A ||\\
+\end{aligned}\]
+
+<p>ただし、Aの大きさを
+\(||A|| = x^2 + y^2\)
+としている。
+\(||A||\)
+は一定であるから、時間の変化はゼロである。よって、</p>
+
+\[A\cdot\frac{dA}{dt} = 0\]
+
+<p>内積の係数は入れ替えても値が変わらないので、</p>
+
+\[\frac{dA}{dt}\cdot A = 0\, ■\]
+
+<p>良かったら、逆にして成分の計算をしてみてください。また、３次元ベクトルにしても同様に成り立ちます。</p>
+
+<p><br /></p>
+
+<h4 id="2">[2]</h4>
+
+<p>AとBが直交しているため、
+\(A(t)\cdot B(t) = 0。\)
+そして、両辺tで微分することを考えると、</p>
+
+\[\frac{dA}{dt}\cdot B(t) + A\cdot\frac{dB}{dt}= 0。\]
+
+<p>いま、
+\(\frac{dA}{dt}とB\)
+は直交していることから
+\(\frac{dA}{dt}\cdot B = 0\)</p>
+
+<p>よって、上式から
+\(A\cdot\frac{dB}{dt}= 0\)
+が成り立つことがわかる。これは、
+\(Aと\frac{dB}{dt}\)
+が直交することを表す■</p>
+
+<p><br /></p>
+
+<h4 id="3">[3]</h4>
+
+<p>A(t)=(x, y, z)、(dA/dt≠0)。B=(a, b, c)のように要素をおいておく。</p>
+
+\[\begin{aligned}
+C 
+&amp;= A \times B\\
+&amp;=\left( y c - z b, z a - x c, x b - y a \right)
+\end{aligned}\]
+
+<p>これを両辺tで微分する。Cは定ベクトルであるので時間微分はゼロ。</p>
+
+\[\begin{aligned}
+\frac{d}{dt}(右辺) 
+&amp;=\left( y c - z b, z a - x c, x b - y a \right)\\
+&amp;=  \left(
+        \dot{y} c - \dot{z} b,
+        \dot{z} a - \dot{x} c,
+        \dot{x} b - \dot{y} a
+    \right)\\
+&amp;= \dot{A} \times B
+\end{aligned}\]
+
+<p>要素が多くなってきたため、混乱しないように時間微分をドットで表す
+\((\dot{A} = \frac{dA}{dt})。\)また、定ベクトルBの
+\(\dot{B} = 0\)
+を利用してゼロになる項を消去している。よって、
+\(\dot{A} \times B = 0\)
+つまり、
+\(\dot{A}\)
+とBは平行。また、係数のどちらかにマイナスがつくと逆平行になる■</p>
+
+<p><br /></p>
+
+<h4 id="4">[4]</h4>
+
+<p>\(\dot{A}\times B=0\)
+なら、
+\(\dot{A}\)
+とBは平行であるから、
+\(\dot{A}\)
+はBのスカラー倍で表すことができる。Bは定ベクトルより、あるスカラー関数f(t)で
+\(\dot{A} = f(t)B\)
+と表すことができる。
+両辺tで積分すると、</p>
+
+\[\begin{aligned}
+    A
+    &amp;= \int f(t)B dt\\
+    &amp;= F(t) B + C
+\end{aligned}\]
+
+<p>ただし、
+\(F(t) = \int f(t) dt、\)
+Cは定ベクトル(積分した時にでてくる積分定数をベクトルでまとめたもの)である■</p>
+
+<p><br /></p>
+
+<h4 id="5">[5]</h4>
+
+<p>条件
+\(C\cdot\dot{A}
+=\dot{A}\cdot B
+=0\)
+を用いて、</p>
+
+\[\begin{aligned}
+\dot{A}\times (B\times C)
+&amp;= B(C\cdot\dot{A}) - C(\dot{A}\cdot B)\\
+&amp;= 0
+\end{aligned}\]
+
+<p>\(D = B\times C\)
+と置けば、
+\(\dot{A}\times D=0。\)
+となって[4]と全く同じ問題に帰着する■</p>
+
+<p>公式
+\(A\times B\times C\)
+は一度、自分で導いておくとよいかもしれません。</p>]]></content><author><name></name></author><category term="vector" /><category term="analysis" /><category term="Toda" /><summary type="html"><![CDATA[第2章 演習問題解答 [1] \(\frac{1}{2} \frac{dx^2}{dt} = x\frac{dx}{dt}\) を利用する。]]></summary></entry><entry><title type="html">ベクトル解析 戸田 第3章 演習問題解答</title><link href="http://localhost:4000/vector/analysis/toda/2023/11/20/vector-analysis-3.html" rel="alternate" type="text/html" title="ベクトル解析 戸田 第3章 演習問題解答" /><published>2023-11-20T04:08:40+09:00</published><updated>2023-11-20T04:08:40+09:00</updated><id>http://localhost:4000/vector/analysis/toda/2023/11/20/vector-analysis-3</id><content type="html" xml:base="http://localhost:4000/vector/analysis/toda/2023/11/20/vector-analysis-3.html"><![CDATA[<h2 id="第3章-演習問題解答">第3章 演習問題解答</h2>
+<h4 id="1">[1]</h4>
+<p>曲線 \(\textbf{r}=\textbf{r}(t)\) の曲率半径
+\(\rho\)
+が、
+\(\frac{1}{\rho^2}
+    = \frac{(v\times a)^2}{v^6}
+    = \frac{v^2a^2 - (\mathbf{v}\cdot \mathbf{a})^2}{v^6}\)
+で与えられることを示す。</p>
+
+\[\textbf{v} = \dot{\textbf{r}},
+\textbf{a} = \ddot{\textbf{r}}\]
+
+<p>である。</p>
+
+<h4 id="-i--frac1rho2--fracvtimes-a2v6">( i ) \(\frac{1}{\rho^2} = \frac{(v\times a)^2}{v^6}\)</h4>
+
+\[\textbf{v}\times\textbf{a}
+=v\textbf{t}\times
+\left(
+    \dot{v}\textbf{t}
+    +\frac{v^2}{\rho}\textbf{n}
+\right)\]
+
+<p>\(\textbf{t}\times\textbf{t}=0\),
+\(\textbf{t}\times\textbf{n}=\textbf{b}\)
+であるから、
+\(\textbf{v}\times\textbf{a}
+=\frac{v^3}{\rho}\textbf{b}\)。</p>
+
+<p>したがって、</p>
+
+\[\begin{aligned}
+(\textbf{v}\times\textbf{a})^2
+    &amp;=\frac{v^6}{\rho^2}\textbf{b}^2\\
+    &amp;=\frac{v^6}{\rho^2}。
+\end{aligned}\]
+
+<p>\(\textbf{b}\)
+は単位ベクトルなのでその大きさが1であることを思い出しておきましょう。</p>
+
+<p>そのまま式変形をすると、</p>
+
+\[\frac{1}{\rho^2} = \frac{(v\times a)^2}{v^6}\]
+
+<p>が得られる■</p>
+
+<p>v ,aがvt, 
+\(vt+(v^2/\rho) n\)
+で表されることについては、(3.24)(3.38)を再確認するとよいでしょう。</p>
+
+<p><br /></p>
+
+<h4 id="-ii--frac1rho2--fracv2a2---mathbfvcdot-mathbfa2v6">( ii ) \(\frac{1}{\rho^2} = \frac{v^2a^2 - (\mathbf{v}\cdot \mathbf{a})^2}{v^6}\)</h4>
+
+<p><br /></p>
+
+<h4 id="2">[2]</h4>
+<p>楕円
+\(\textbf{r} = a \cos t\mathbf{i} + b \sin t \mathbf{j}\)
+の曲率を求める。</p>]]></content><author><name></name></author><category term="vector" /><category term="analysis" /><category term="Toda" /><summary type="html"><![CDATA[第3章 演習問題解答 [1] 曲線 \(\textbf{r}=\textbf{r}(t)\) の曲率半径 \(\rho\) が、 \(\frac{1}{\rho^2} = \frac{(v\times a)^2}{v^6} = \frac{v^2a^2 - (\mathbf{v}\cdot \mathbf{a})^2}{v^6}\) で与えられることを示す。]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2023/11/17/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2023-11-17T04:08:40+09:00</published><updated>2023-11-17T04:08:40+09:00</updated><id>http://localhost:4000/jekyll/update/2023/11/17/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/11/17/welcome-to-jekyll.html"><![CDATA[\[E = mc^2\]
+
+<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.日本語も書いてみた。</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[\[E = mc^2\]]]></summary></entry></feed>
