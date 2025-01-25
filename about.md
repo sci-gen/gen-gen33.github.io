@@ -21,9 +21,6 @@ permalink: /about/
 
 [お問い合わせフォーム](https://forms.gle/vqF9APC4MJY1sH676){: .contact-button}
 
-その他の連絡手段:
-- GitHub: [@{{ site.github_username }}](https://github.com/{{ site.github_username }})
-
 </div>
 
 </div>
