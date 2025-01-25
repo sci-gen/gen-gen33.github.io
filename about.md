@@ -1,0 +1,29 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+<div class="about-page" markdown="1">
+
+# Gen.について
+
+## 経歴・実績
+生物の動きに魅了され、アメーバ運動の研究に従事。その過程で牽引力顕微鏡の設計を行い、生物の動きを定量的に解析する研究をしてきました。
+また、ハイスピードカメラの技術コンサルティングを通じて、高速な現象の撮影・解析技術にも携わってきました。
+
+現在は、データサイエンスと生物模倣ロボットに興味を持ち、自身が必要だと感じたアプリケーションの開発も行っています。
+
+<div class="contact-section" markdown="1">
+
+## お問い合わせ
+プロジェクトのご相談やお問い合わせ、アプリに関してもっとこうしてほしいといった要望等は、以下のフォームからお気軽にご連絡ください。
+
+[お問い合わせフォーム](https://forms.gle/vqF9APC4MJY1sH676){: .contact-button}
+
+その他の連絡手段:
+- GitHub: [@{{ site.github_username }}](https://github.com/{{ site.github_username }})
+
+</div>
+
+</div>

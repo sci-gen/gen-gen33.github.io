@@ -3,32 +3,103 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <section class="hero">
+    <h1>{{ site.title }}</h1>
+    <p class="lead">{{ site.description }}</p>
+  </section>
 
-  {{ content }}
+  <section class="services">
+    <h2>協力できること</h2>
+    <p class="section-description">これまでの研究経験を活かして、以下の分野でお手伝いができます。</p>
+    <div class="service-grid">
+      <div class="service-item">
+        <h3>顕微鏡観察の支援</h3>
+        <p>生物の動きを観察・記録するための顕微鏡システムについて、
+        セットアップから撮影方法まで相談に乗れます。</p>
+        <ul class="service-details">
+          <li>位相差・微分干渉顕微鏡の使用</li>
+          <li>CCDカメラでの長時間撮影</li>
+          <li>ハイスピードカメラの活用</li>
+        </ul>
+      </div>
 
+      <div class="service-item">
+        <h3>実験データの解析</h3>
+        <p>顕微鏡画像や実験データから必要な情報を抽出する方法について、
+        一緒に考えていけたらと思います。</p>
+        <ul class="service-details">
+          <li>画像からの運動解析</li>
+          <li>牽引力顕微鏡データの解析</li>
+          <li>解析システムの構築</li>
+        </ul>
+      </div>
+
+      <div class="service-item">
+        <h3>研究・実験用ツール開発</h3>
+        <p>実験や解析で必要なツールを一緒に考えて、
+        使いやすいアプリケーションを作れたらと思います。</p>
+        <ul class="service-details">
+          <li>データ管理ツール</li>
+          <li>解析の自動化</li>
+          <li>カスタムアプリケーション</li>
+        </ul>
+      </div>
+
+      <div class="service-item">
+        <h3>アプリケーション開発</h3>
+        <p>仕事や、自分の家で必要だと思ったアプリケーションを開発します。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>技術スタック</h2>
+    <div class="skill-grid">
+      <div class="skill-category">
+        <h3>開発言語</h3>
+        <p>Python, Go</p>
+      </div>
+      <div class="skill-category">
+        <h3>フレームワーク・ツール</h3>
+        <p>Django, Flask, Ruby on Rails, Gin</p>
+      </div>
+      <div class="skill-category">
+        <h3>データサイエンス</h3>
+        <p>PyTorch, scikit-learn, TensorFlow</p>
+      </div>
+      <div class="skill-category">
+        <h3>画像解析・顕微鏡</h3>
+        <p>ImageJ, NIS-Elements</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>お問い合わせ</h2>
+    <p>プロジェクトのご相談やお問い合わせ、アプリに関してもっとこうしてほしいといった要望等は、以下のフォームからお気軽にご連絡ください。</p>
+    <div class="contact-actions">
+      <a href="https://forms.gle/vqF9APC4MJY1sH676" class="contact-button">お問い合わせフォーム</a>
+    </div>
+  </section>
+
+  {% comment %}
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  <section class="blog">
+    <h2>最新の投稿</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in site.posts limit:3 -%}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
       </li>
       {%- endfor -%}
     </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  </section>
   {%- endif -%}
-
+  {% endcomment %}
 </div>
