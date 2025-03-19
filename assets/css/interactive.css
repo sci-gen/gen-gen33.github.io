@@ -1,0 +1,245 @@
+/* インタラクティブなウェブサイトのためのスタイル */
+
+:root {
+  --primary-color: #4a6fa5;
+  --secondary-color: #6b8cae;
+  --accent-color: #ff6b6b;
+  --text-color: #333;
+  --background-color: #fff;
+  --card-background: #f8f9fa;
+  --hover-color: #e9ecef;
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+/* ダークモード */
+body.dark-mode {
+  --primary-color: #6b8cae;
+  --secondary-color: #4a6fa5;
+  --accent-color: #ff8787;
+  --text-color: #e9ecef;
+  --background-color: #212529;
+  --card-background: #343a40;
+  --hover-color: #495057;
+  --border-color: #495057;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダーとナビゲーション */
+.navigation, .navigation-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.navigation a, .navigation-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: all var(--transition-speed);
+}
+
+.navigation a:hover, .navigation-links a:hover, .nav-hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+/* ヒーローセクション */
+.hero-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-section.scrolled {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* CTAボタン */
+.cta-button, .contact-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all var(--transition-speed);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.primary-button, .cta-primary {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button:hover, .contact-button:hover, .cta-hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.primary-button:hover, .cta-primary:hover {
+  background-color: #ff8787;
+}
+
+.secondary-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* セクションスタイル */
+.services-section, .portfolio-section, .contact-section {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  background-color: var(--card-background);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.services-section.scrolled, .portfolio-section.scrolled, .contact-section.scrolled {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services-section h2, .portfolio-section h2, .contact-section h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+/* カードスタイル */
+.service-card, .project-card, .app-section {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: all var(--transition-speed);
+  cursor: pointer;
+}
+
+.service-card:hover, .project-card:hover, .app-section:hover, .card-hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card-expanded {
+  transform: scale(1.02);
+}
+
+.service-card h3, .project-card h3, .app-section h3 {
+  color: var(--primary-color);
+}
+
+/* プロジェクト詳細 */
+.project-detail, .app-detail, .service-detail {
+  padding: 1rem;
+  border-left: 3px solid var(--accent-color);
+  margin-left: 1rem;
+}
+
+/* お問い合わせセクション */
+.contact-section {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.contact-section h2 {
+  color: white;
+}
+
+/* ダークモードトグル */
+.dark-mode-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--card-background);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: all var(--transition-speed);
+}
+
+.dark-mode-toggle:hover {
+  transform: rotate(30deg);
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 768px) {
+  .navigation, .navigation-links {
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+  }
+  
+  .hero-section {
+    padding: 6rem 2rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+  
+  .services-section, .portfolio-section, .contact-section {
+    padding: 3rem 2rem;
+    margin: 3rem auto;
+    max-width: 1200px;
+  }
+  
+  .service-card, .project-card {
+    display: inline-block;
+    width: calc(50% - 2rem);
+    margin: 1rem;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-card {
+    width: calc(25% - 2rem);
+  }
+  
+  .project-card {
+    width: calc(33.333% - 2rem);
+  }
+}

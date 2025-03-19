@@ -1,8 +1,17 @@
 ---
 layout: default
 ---
-<article class="post">
-  <div class="post-content">
-    {{ content }}
-  </div>
-</article>
+<div class="page-container">
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </article>
+</div>
+
+<script src="{{ '/assets/js/interactive.js' | relative_url }}"></script>
+<link rel="stylesheet" href="{{ '/assets/css/interactive.css' | relative_url }}">
