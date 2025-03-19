@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about | Gen.
+title: about
 permalink: /about/
 description: プロフィールページです。
 ---

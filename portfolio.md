@@ -1,8 +1,8 @@
 ---
 layout: page
-title: アプリケーション | Gen. | データサイエンス・生物模倣ロボット研究者
+title: apps
 permalink: /apps/
-description: Gen.が開発したDoc-ScannerやPDF Connectorなどのアプリケーションをご紹介します。日常業務や研究活動を効率化するツールをお試しください。
+description: apps
 ---
 
 <div class="apps-page" markdown="1">

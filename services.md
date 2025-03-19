@@ -1,6 +1,6 @@
 ---
 layout: page
-title: サービス | Gen.
+title: サービス
 permalink: /services/
 description: Gen.が提供するサービス
 ---
