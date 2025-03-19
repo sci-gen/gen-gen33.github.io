@@ -21,7 +21,8 @@
 title: Gen.
 email: matsug08@gmail.com 
 description: >- # this means to ignore newlines until "baseurl:"
-  データサイエンスと生物模倣ロボットに興味があります。
+  微生物、データサイエンスに興味があります。
+  顕微鏡、ハイスピードカメラなどの計測機器に精通しています。
   自分が使いたいと思ったアプリの開発も行っています。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

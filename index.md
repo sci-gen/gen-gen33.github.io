@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Gen. | データサイエンス・生物模倣ロボット研究者
-description: Gen.のポートフォリオサイトです。データサイエンス、生物模倣ロボット研究、アプリケーション開発に関する情報を提供しています。
+title: Gen.
+description: ポートフォリオサイト
 ---
 
 <div class="hero-section" markdown="1">
-# データサイエンスと生物模倣ロボットの融合
+# Imaging, Obserbing, measuring
 
-アメーバ運動研究から始まり、データサイエンスと生物模倣ロボットの可能性を追求しています。
+アメーバ運動研究から始まり、データサイエンスと生物模倣の可能性を追求しています。
 自然界の知恵を工学的に応用し、革新的なソリューションを生み出すことを目指しています。
 
 [プロフィールを見る](/about/){: .cta-button .primary-button}
@@ -18,21 +18,11 @@ description: Gen.のポートフォリオサイトです。データサイエン
 ## 専門分野・サービス
 
 <div class="service-card" markdown="1">
-### データサイエンス
-
-画像解析や時系列データの分析を通じて、複雑な現象を理解し、意思決定に役立つ情報を抽出します。
-</div>
-
-<div class="service-card" markdown="1">
-### 生物模倣ロボット
-
-生物の動きや適応メカニズムを模倣したロボット制御システムの研究開発を行っています。
-</div>
-
-<div class="service-card" markdown="1">
 ### 技術コンサルティング
 
-ハイスピードカメラ技術を中心に、高速現象の撮影・解析に関するコンサルティングを提供しています。
+カメラ・画像処理技術を中心に、撮影・解析に関するコンサルティングを提供しています。
+
+顕微鏡の操作や観察の相談も受け付けております。
 </div>
 
 <div class="service-card" markdown="1">
@@ -54,14 +44,14 @@ description: Gen.のポートフォリオサイトです。データサイエン
 <div class="project-card" markdown="1">
 ### Doc-Scanner アプリ
 
-書類のスキャンと管理を効率化するアプリケーションを開発しました。
+書類のスキャンと管理を効率化するアプリケーションです。
 [詳細を見る](/apps/#doc-scanner)
 </div>
 
 <div class="project-card" markdown="1">
 ### PDF Connector アプリ
 
-PDFファイルの結合・分割・編集を簡単に行えるツールを開発しました。
+PDFファイルの結合・分割・編集を簡単に行えるツールです。
 [詳細を見る](/apps/#pdf-connector)
 </div>
 </div>
@@ -69,7 +59,7 @@ PDFファイルの結合・分割・編集を簡単に行えるツールを開�
 <div class="contact-section" markdown="1">
 ## プロジェクト相談・お問い合わせ
 
-データサイエンス、生物模倣ロボット、アプリケーション開発に関するプロジェクト相談や技術コンサルティングのご依頼を承っております。
+プロジェクト相談や技術コンサルティングのご依頼を承っております。
 
 [お問い合わせフォーム](https://forms.gle/vqF9APC4MJY1sH676){: .cta-button .primary-button}
 </div>
