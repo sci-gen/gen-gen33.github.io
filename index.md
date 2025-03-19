@@ -43,14 +43,19 @@ description: ポートフォリオサイト
 </div>
 
 <div class="project-card" markdown="1">
-### Doc-Scanner アプリ
+### アプリ：Doc-Scanner
+
+<img src="/assets/src/doc-scanner.ico" alt="icon" class="icon">
 
 書類のスキャンと管理を効率化するアプリケーションです。
 [詳細を見る](/apps/#doc-scanner)
 </div>
 
 <div class="project-card" markdown="1">
-### PDF Connector アプリ
+### アプリ：PDF Connector
+
+<img src="/assets/src/pdf-connector.ico" alt="icon" class="icon">
+
 
 PDFファイルの結合・分割・編集を簡単に行えるツールです。
 [詳細を見る](/apps/#pdf-connector)
