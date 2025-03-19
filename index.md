@@ -5,9 +5,10 @@ description: ポートフォリオサイト
 ---
 
 <div class="hero-section" markdown="1">
-# Imaging, Obserbing, measuring
+# Imaging, Obserbing, Measuring
 
 アメーバ運動研究から始まり、データサイエンスと生物模倣の可能性を追求しています。
+
 自然界の知恵を工学的に応用し、革新的なソリューションを生み出すことを目指しています。
 
 [プロフィールを見る](/about/){: .cta-button .primary-button}
