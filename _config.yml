@@ -21,10 +21,11 @@
 title: Gen.
 email: matsug08@gmail.com 
 description: >- # this means to ignore newlines until "baseurl:"
+  ポートフォリオサイト
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sci-gen.github.io" # the base hostname & protocol for your site
 twitter_username: gen_gen33
-github_username: gen-gen33
+github_username: sci-gen
 
 # Build settings
 markdown: kramdown
